@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    max-width: 900px;
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    color: white;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Search Box */
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    padding: 10px;
+    width: 60%;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+}
+
+.search-box button {
+    padding: 10px 20px;
+    border: none;
+    background: #fff;
+    color: #333;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+}
+
+/* Cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Card */
+.card {
+    width: 200px;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* No result */
+.no-result {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Search</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🔍 Profile Search</h1>
+
+        <!-- Search Form -->
+        <form action="/search" method="GET" class="search-box">
+            <input 
+                type="text" 
+                name="name" 
+                placeholder="Enter name..." 
+                value="<%= name || '' %>"
+            >
+            <button type="submit">Search</button>
+        </form>
+
+        <!-- Results -->
+        <div class="card-container">
+            <% if(filteredUsers && filteredUsers.length > 0){ %>
+                <% filteredUsers.forEach(user => { %>
+                    <div class="card">
+                        <h2><%= user.name %></h2>
+                        <p><%= user.email %></p>
+                        <span>ID: <%= user.id %></span>
+                    </div>
+                <% }) %>
+            <% } else { %>
+                <p class="no-result">No user found 😢</p>
+            <% } %>
+        </div>
+    </div>
+
+</body>
+</html>
