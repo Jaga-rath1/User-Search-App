@@ -24,10 +24,10 @@ A backend-driven search application built with Node.js, Express, and EJS that al
 ## 📸 Screenshots
 
 ### 🔹 Home Page
-![Home Page](./screenshots/home.png)
+![Home Page](jk.png)
 
 ### 🔹 Search Result
-![Search Result](jk.png)
+![Search Result](res.png)
 
 ---
 
